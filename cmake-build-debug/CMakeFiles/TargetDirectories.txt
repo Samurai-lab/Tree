@@ -1,0 +1,3 @@
+/Users/frau.inc/github/Tree/cmake-build-debug/CMakeFiles/Tree.dir
+/Users/frau.inc/github/Tree/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/frau.inc/github/Tree/cmake-build-debug/CMakeFiles/rebuild_cache.dir
