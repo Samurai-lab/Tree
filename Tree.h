@@ -9,12 +9,10 @@ typedef struct Node {
 };
 
 class Tree {
+public:
+    void printTree(Node *root);
 
-
-    void printTree(Node *tree);
-
-    Node *addTree(Node *tree, Data data);
-
+    Node *addTree(Node *root, Data data);
 };
 
 

@@ -2,15 +2,30 @@
 #include "Tree.h"
 
 int main() {
+    Tree tree = *new Tree;
     Node
             one = {1, nullptr, nullptr},
-            two = {1, nullptr, nullptr},
-            thee = {1, nullptr, nullptr},
-            five = {1, nullptr, nullptr},
-            seven = {1, nullptr, nullptr},
-            eight = {1, nullptr, nullptr},
-            nine = {1, nullptr, nullptr};
-    Node *tree = nullptr;
+            two = {2, nullptr, nullptr},
+            thee = {3, nullptr, nullptr},
+            five = {5, nullptr, nullptr},
+            seven = {7, nullptr, nullptr},
+            eight = {8, nullptr, nullptr},
+            nine = {9, nullptr, nullptr};
+
+    Node *root = nullptr;
+    root = &seven;
+
+    seven.left = &thee;
+    seven.right = &nine;
+
+    nine.left = &eight;
+
+    thee.left = &two;
+    thee.right = &five;
+
+    two.left = &one;
+
+    tree.printTree(root);
 
     return 0;
 }
