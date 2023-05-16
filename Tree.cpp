@@ -10,5 +10,18 @@ void Tree::printTree(Node *root) {
 }
 
 Node *Tree::addTree(Node *root, Data data) {
-    return nullptr;
+    if (root == nullptr) {
+        Node *t = new Node;
+        t->data = data;
+        t->left = t->right = nullptr;
+        return t;
+    }
+    if (data < root->data) {
+        root->left = addTree(root->left, data);
+    }
+
+    if (data > root->data) {
+        root->right = addTree(root->right, data);
+    }
+    return root;
 }
